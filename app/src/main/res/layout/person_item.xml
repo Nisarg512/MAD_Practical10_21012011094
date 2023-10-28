@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto">
@@ -29,37 +30,64 @@
                 android:contentDescription="hii"
                 />
 
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/MatrialButoon1"
+                style="?materialIconButtonFilledStyle"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_marginStart="240dp"
+                android:layout_marginTop="4dp"
+                android:contentDescription="hii"
+                app:icon="@drawable/baseline_location_on_24"
+                app:iconGravity="textStart"
+                app:iconSize="50dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
             <LinearLayout
                 android:id="@+id/layout1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-                <TextView
-                    android:id="@+id/tv_layout_1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Person Name"/>
-
-                <TextView
-                    android:id="@+id/tv_layout_2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Contect"/>
-
-                <TextView
-                    android:id="@+id/tv_layout_3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Email_id"/>
-
-                <TextView
-                    android:id="@+id/tv_layout_4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Address"/>
+                android:orientation="vertical"
+                >
 
             </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_layout_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Person Name"
+                tools:layout_editor_absoluteX="64dp"
+                tools:layout_editor_absoluteY="0dp"
+                />
+
+            <TextView
+                android:id="@+id/tv_layout_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Contect"
+                tools:layout_editor_absoluteX="64dp"
+                tools:layout_editor_absoluteY="19dp" />
+
+            <TextView
+                android:id="@+id/tv_layout_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email_id"
+                tools:layout_editor_absoluteX="64dp"
+                tools:layout_editor_absoluteY="38dp" />
+
+            <TextView
+                android:id="@+id/tv_layout_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Address"
+                tools:layout_editor_absoluteX="65dp"
+                tools:layout_editor_absoluteY="57dp"
+                />
+
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
