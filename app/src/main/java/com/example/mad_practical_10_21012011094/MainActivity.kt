@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        val fab: FloatingActionButton = findViewById(R.id.fab)
+        val fab: FloatingActionButton = findViewById(R.id.flo1)
         fab.setOnClickListener {
 
             CoroutineScope(Dispatchers.IO).launch {
@@ -50,19 +50,20 @@ class MainActivity : AppCompatActivity() {
                 val person = Person(jsonObject)
                 personList.add(person)
             }
-            val personListView = findViewById<ListView>(R.id.list1)
+            val personListView = findViewById<ListView>(R.id.listView)
+            personListView.adapter = PersonAdapter(this,personList)
         } catch (ee: JSONException) {
             ee.printStackTrace()
         }
     }
     fun setArraytoListView(){
-        val personListView = findViewById<ListView>(R.id.list1)
+        val personListView = findViewById<ListView>(R.id.listView)
         val array = arrayListOf<Person>(
-            Person("nljnl","nlnk","nklnkl","nklnkl","nllkl",90.90,909.90),
-            Person("nljnl","nlnk","nklnkl","nklnkl","nllkl",90.90,909.90),
-            Person("nljnl","nlnk","nklnkl","nklnkl","nllkl",90.90,909.90),
-            Person("nljnl","nlnk","nklnkl","nklnkl","nllkl",90.90,909.90),
-            Person("nljnl","nlnk","nklnkl","nklnkl","nllkl",90.90,909.90)
+            Person("1","Priyansh","","9265605089","Gandhinagar",90.90,909.90),
+            Person("2","Vishal","ladavavishal22@gmail.com","9081897151","Rajkot",90.90,909.90),
+            Person("3","jay","jay22@gmail.com","9081897152","Mehasana",90.90,909.90),
+            Person("4","vivek","vivek@gmail.com","9081897153","Morbi",90.90,909.90),
+            Person("5","jvk","jvk@gmail.com","9725240046","surat",90.90,909.90)
         )
         personListView.adapter=PersonAdapter(this,array)
     }

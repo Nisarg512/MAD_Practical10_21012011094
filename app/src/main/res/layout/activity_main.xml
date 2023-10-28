@@ -7,21 +7,25 @@
     tools:context=".MainActivity">
 
     <ListView
-
+        android:id="@+id/listView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/list1">
-
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/fab">
-
-        </com.google.android.material.floatingactionbutton.FloatingActionButton>
-
+        android:layout_height="wrap_content"
+        android:dividerHeight="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
     </ListView>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/flo1"
+        android:src="@drawable/baseline_refresh_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
 
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

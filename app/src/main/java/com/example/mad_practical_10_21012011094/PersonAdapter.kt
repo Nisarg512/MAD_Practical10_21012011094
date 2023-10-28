@@ -11,7 +11,7 @@ import com.google.android.material.button.MaterialButton
 import java.security.AccessControlContext
 
 class PersonAdapter
-    (val context: Context,val personarray:ArrayList<Person>):ArrayAdapter<Person>(context,0,personarray)
+    (context: Context,val personarray:ArrayList<Person>):ArrayAdapter<Person>(context,0,personarray)
 {
     override fun getView(position: Int, convertView: View?, parent: ViewGroup): View {
         val view=LayoutInflater.from(context).inflate(R.layout.person_item,parent,false)
