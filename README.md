@@ -11,6 +11,8 @@ Add Internet Permission in Manifest file
 Create Class HttpRequest for communicating with Web URL
 
 OUTPUT:
+
+
 ![image](https://github.com/Nisarg512/MAD_Practical_10_21012011094/assets/139303998/fb9f21a7-26a6-4895-ad84-f53b1fb3dc41)
 
 
